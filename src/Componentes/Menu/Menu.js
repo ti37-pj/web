@@ -1,7 +1,6 @@
-import { FunctionComponent } from 'react'
 import './Menu.css'
 
-const Menu:FunctionComponent = () => {
+const Menu = () => {
 	return (
 		<>
           <a>Início</a> 

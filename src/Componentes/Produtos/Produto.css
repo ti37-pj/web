@@ -1,0 +1,30 @@
+.produto {
+    border: 1px darkgray solid;
+    border-radius: 20px;
+    width: 320px;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto p {
+    font-size: 17px;
+    margin: 5px;
+}
+
+.produto li {
+    font-size: 18px;
+    display: flex;
+    
+}
+
+.produto h2 {
+    margin: 5px;
+}
+
+.produto li span {
+    font-weight: bold;
+    margin-right: 18px;
+}
+
