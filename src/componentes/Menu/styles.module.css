@@ -1,4 +1,7 @@
-a{
+.menu {
+}
+
+.menu a {
     padding-left: 20px;
     align-items: center;
     margin-inline: 16px;

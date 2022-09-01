@@ -1,0 +1,10 @@
+.cardapioCategoria {
+}
+
+.cardapioCategoria h3 {
+}
+
+.cardapioCategoria ul {
+    display: flex;
+    column-gap: 32px;
+}

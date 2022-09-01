@@ -2,6 +2,7 @@
     border: 1px darkgray solid;
     border-radius: 20px;
     width: 320px;
+    overflow: hidden;
 }
 
 .produto img {

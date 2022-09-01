@@ -1,13 +1,18 @@
-import React from 'react';
-import "./Produto.css";
+import React, { FC } from 'react';
+import Produto from '../../modelos/Produto';
+import styles from "./styles.module.css";
 
-const Produto = () => {
+type Props = {
+    produto: Produto;
+};
+
+const CardapioItem: FC<Props> = function(props) {
     return ( 
-        <div className='produto'>
+        <div className={styles.produto}>
                 {/* https://via.placeholder.com/200 */}
                 <img src={"https://via.placeholder.com/200"}/>
-                <h2> Picanha </h2>
-                <p> Acompanha cebola especial da casa, farofa, maionese de alho, vinagrete e pães. </p>
+                <h2>{props.produto.nome}</h2>
+                <p>{props.produto.descricao}</p>
                 <ul>
                     <li> <span> R$ 19,80 </span> Arroz </li>
                     <li> <span> R$ 17,00 </span> Feijão </li>
@@ -19,4 +24,4 @@ const Produto = () => {
      );
 }
  
-export default Produto;
+export default CardapioItem;
