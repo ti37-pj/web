@@ -5,6 +5,8 @@ import CardapioItem from "../../componentes/CardapioItem";
 import Menu from "../../componentes/Menu";
 import { Categoria } from "../../modelos/Produto";
 import styles from './styles.module.css';
+import {MDCRipple} from '@material/ripple';
+
 
 function PaginaApresentacao() {
     return (
@@ -13,8 +15,13 @@ function PaginaApresentacao() {
                 <h1>Lelexo Bar</h1>
                 <Menu />
                 
-                <div><i className="fa fa-donwload">Baixe o nosso App</i></div>
+                <div className="mdc-touch-target-wrapper">
+                <button id="buttonApp" className="mdc-button mdc-button--raised">
+  <span className="mdc-button__label">Contained Button</span>
+</button>
+                </div>
             </header>
+
             <main id="inicio">
                 <Carousel>
                     <CarouselItem>
@@ -30,8 +37,9 @@ function PaginaApresentacao() {
                         <div className="carousel-item">
                             <img src="..." alt="..." />
                             <div className="carousel-caption d-none d-md-block">
-                                <h5>...</h5>
-                                <p>...</p>
+                                <h5>Aberto</h5>
+                                <p>terça - quinta</p>
+                                <p>11am - 21pm</p>
                             </div>
                         </div>
                     </div>

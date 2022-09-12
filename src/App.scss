@@ -1,0 +1,21 @@
+ 
+@use "@material/theme" with (
+  $primary: #FEDBD0,
+  $on-primary: #442C2E
+);
+@use "@material/button";
+body {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffe48d;
+  background-color: #000016;
+}
+
+#buttonApp{
+  --mdc-theme-primary: #FEDBD0;
+  --mdc-theme-on-primary: #442C2E;
+}
+ #body {
+  justify-content: center;
+ }
