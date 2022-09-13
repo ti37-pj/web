@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel, CarouselItem } from "react-bootstrap";
 import CardapioCategoria from "../../componentes/CardapioCategoria";
 import CardapioItem from "../../componentes/CardapioItem";
 import Menu from "../../componentes/Menu";
-import { Categoria } from "../../modelos/Produto";
 import styles from './styles.module.css';
 import {MDCRipple} from '@material/ripple';
+import Categoria from "../../modelos/Categoria";
+import Produto from "../../modelos/Produto";
 
 
 function PaginaApresentacao() {
+    const [categorias, setCategorias] = React.useState<Categoria[]>([]);
+    const [produtos, setProdutos] = React.useState<Produto[]>([]);
+    const produtosDaCategoria = (categoria: Categoria) => produtos.filter(produto => (produto.id_categoria === categoria.id));
+
+    useEffect(() => {
+        //TODO: Conectar no back-end
+        setCategorias([
+            {
+                id: 1,
+                nome: 'Comidas',
+            },
+            {
+                id: 2,
+                nome: 'Bebidas',
+            },
+        ]);
+        setProdutos([
+            {
+                id: 1,
+                nome: 'Coca',
+                descricao: 'refrigerante lata',
+                id_categoria: 2,
+                imagem_url: '',
+            },
+        ]);
+    }, []);
+
     return (
         <>
             <header className={styles.header}>
@@ -48,10 +76,10 @@ function PaginaApresentacao() {
                 
                 <section id="cardapio">
                     <h2>Cardápio</h2>
-                    <CardapioCategoria titulo='Bebidas' categoria={Categoria.Bebidas} />
-                    <CardapioCategoria titulo='Comidas' categoria={Categoria.Comidas} />
-                    <CardapioCategoria titulo='Petiscos' categoria={Categoria.Petiscos} />
-                    <CardapioCategoria titulo='Sobremesas' categoria={Categoria.Sobremesas} />
+                    {categorias.map(categoria =>
+                        <CardapioCategoria categoria={categoria} produtos={produtosDaCategoria(categoria)} />
+                    )}   
+
                 </section>
 
                 <section id="contato">

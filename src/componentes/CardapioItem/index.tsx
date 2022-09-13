@@ -8,7 +8,7 @@ type Props = {
 
 const CardapioItem: FC<Props> = function(props) {
     return ( 
-        <div className={styles.produto}>
+        <li className={styles.produto}>
                 {/* https://via.placeholder.com/200 */}
                 <img src={"https://via.placeholder.com/200"}/>
                 <h2>{props.produto.nome}</h2>
@@ -20,7 +20,7 @@ const CardapioItem: FC<Props> = function(props) {
                     <li> <span> R$ 189,00 </span> Chapinha </li>
                     <li> <span> R$ 245,00 </span> Chapa </li>
                 </ul>
-        </div>
+        </li>
      );
 }
  

@@ -1,18 +1,16 @@
-enum Categoria {
-    Bebidas = 'BEBIDAS',
-    Comidas = 'COMIDAS',
-    Petiscos = 'PETISCOS',
-    Sobremesas = 'SOBREMESAS',
-};
-
 type Produto = {
     id: number;
     nome: string;
     descricao: string;
-    categoria: Categoria;
+    id_categoria: number;
+    imagem_url: string;
 };
 
+type Variacao = {
+    id: number;
+    descricao: string;
+    id_produto?: number;
+}
+
 export default Produto;
-export {
-    Categoria,
-};
+export type {Variacao,};
