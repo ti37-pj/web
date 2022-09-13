@@ -10,3 +10,9 @@
     align-items: center;
     margin-inline: 16px;
   }
+
+  #button {
+    --mdc-theme-primary: #FEDBD0;
+    --mdc-theme-on-primary: #442C2E;
+    }
+
