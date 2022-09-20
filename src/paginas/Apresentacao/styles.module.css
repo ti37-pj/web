@@ -14,5 +14,7 @@
   #button {
     --mdc-theme-primary: #FEDBD0;
     --mdc-theme-on-primary: #442C2E;
+    position: fixed;
+    text-align: right;
     }
 
