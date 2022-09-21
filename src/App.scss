@@ -19,3 +19,24 @@ body {
  #body {
   justify-content: center;
  }
+
+ .apresentacao{
+  display: flex;
+  justify-content: space-between; 
+  position: fixed;
+  z-index: 100;
+ }
+ .contato{
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #000016;
+  padding: 0 20px 20px 20px;
+ }
+ .mapaContato{
+  display: flex;
+ }
+ .mapa{
+  border-style: none;
+  flex-grow: 1;
+ }
