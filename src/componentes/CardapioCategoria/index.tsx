@@ -17,8 +17,10 @@ const CardapioCategoria: FC<Props> = (props) => {
         <div className={styles.cardapioCategoria}>
             <h3>{props.categoria.nome}</h3>
             <ul>
-                {props.produtos.map(function (produto) {
-                    return <CardapioItem produto={produto}/>
+                {props.produtos.map(function (produto, index) {
+                    if ( index <= 4 ) {
+                        return <CardapioItem produto={produto}/>
+                    } 
                 })}            
             </ul>
         </div> 

@@ -1,32 +1,45 @@
 .produto {
-    border: 1px darkgray solid;
-    border-radius: 20px;
-    width: 320px;
+    /* border: 1px #000 solid; */
+    border-radius: 10px;
+    /* width: 320px; */
     overflow: hidden;
-    justify-content: center;
+    /* box-shadow: 20px 20px 35px #534444; */
+    box-shadow: 3px 3px 5px #222;
+    padding: 12px;
+    background: #51545A; 
+    margin: 15px;
+    max-width: 350px;
 }
 
 .produto img {
     width: 100%;
+    margin-bottom:16px;
 }
 
 .produto p {
-    font-size: 17px;
-    margin: 5px;
+    font-size: 20px;
+    margin: 6px;
+    font-weight: bold;
+    margin-bottom: 35px;
 }
 
 .produto li {
     font-size: 18px;
     display: flex;
-    
 }
 
 .produto h2 {
-    margin: 5px;
+    /* margin: 18px; */
+    font-size: 1.6em;
 }
 
 .produto li span {
     font-weight: bold;
     margin-right: 18px;
+}
+
+.produto h1 {
+    font-size: 35px;
+    font-weight: bold;
 }
 
