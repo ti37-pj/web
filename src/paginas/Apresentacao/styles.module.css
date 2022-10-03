@@ -14,7 +14,10 @@
   #button {
     --mdc-theme-primary: #FEDBD0;
     --mdc-theme-on-primary: #442C2E;
+<<<<<<< HEAD
     position: fixed;
     text-align: right;
+=======
+>>>>>>> c099cd85402e4fdd870b3667d79242340ece4277
     }
 

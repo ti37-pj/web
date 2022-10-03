@@ -18,6 +18,7 @@ body {
 }
  #body {
   justify-content: center;
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: 200px 200px 200px;
   gap: 44px;
@@ -28,3 +29,27 @@ body {
   margin-top: 0;
   padding: 10px;
 }
+=======
+ }
+
+ .apresentacao{
+  display: flex;
+  justify-content: space-between; 
+  position: fixed;
+  z-index: 100;
+ }
+ .contato{
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #000016;
+  padding: 0 20px 20px 20px;
+ }
+ .mapaContato{
+  display: flex;
+ }
+ .mapa{
+  border-style: none;
+  flex-grow: 1;
+ }
+>>>>>>> c099cd85402e4fdd870b3667d79242340ece4277
