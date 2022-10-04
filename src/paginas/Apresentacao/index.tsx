@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
-import { Carousel, CarouselItem } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import CardapioCategoria from "../../componentes/CardapioCategoria";
-import CardapioItem from "../../componentes/CardapioItem";
 import Menu from "../../componentes/Menu";
 import './styles.module.css';
-import {MDCRipple} from '@material/ripple';
 import Categoria from "../../modelos/Categoria";
 import Produto from "../../modelos/Produto";
-import axios from "axios";
 
 import Rodape from "../../componentes/Rodape";
+import api from "../../api";
 
 function PaginaApresentacao() {
     const [categorias, setCategorias] = React.useState<Categoria[]>([]);
@@ -18,16 +16,16 @@ function PaginaApresentacao() {
 
 
     const buscaProdutos = () => {
-        axios.get<Produto[]>('http://10.60.46.31:3001/produtos/busca_todos')
-		.then(res => {
+        api.get<Produto[]>('/produtos/busca_todos')
+		    .then(res => {
             console.log(res.data)
             setProdutos(res.data)
         })
 		.catch(res => console.log(res))
     }
     const buscaCategorias = () => {
-      axios.get<Categoria[]>('http://10.60.46.31:3001/categorias/busca_todos')
-  .then(res => {
+      api.get<Categoria[]>('/categorias/busca_todos')
+      .then(res => {
           console.log(res.data)
           setCategorias(res.data)
       })
