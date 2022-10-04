@@ -1,11 +1,12 @@
- 
-@use "@material/theme" with (
+ @use "@material/theme" with (
   $primary: #FEDBD0,
   $on-primary: #442C2E,
   $cor-fundo: #36393F,
   $cor-produto: #51545A
 );
+
 @use "@material/button";
+
 body {
   font-family: sans-serif;
   font-size: 20px;
@@ -13,7 +14,7 @@ body {
   // color: rgb(144, 109, 109);
   color: #FFF;
   background-color: #36393ff9;
-  background-image: url('./../public/imagens/bg.jpg');
+  background-image: url('../public/imagens/bg.jpg');
   background-size: cover;
 }
 
@@ -21,40 +22,31 @@ body {
   --mdc-theme-primary: #FEDBD0;
   --mdc-theme-on-primary: #442C2E;
 }
- #body {
-  justify-content: center;
-<<<<<<< HEAD
-  display: grid;
-  grid-template-columns: 200px 200px 200px;
-  gap: 44px;
- }
- h1 {
-  top: 0;
-  width: 500px;
-  margin-top: 0;
-  padding: 10px;
-}
-=======
- }
 
- .apresentacao{
+#body {
+  justify-content: center;
+}
+
+.apresentacao{
   display: flex;
   justify-content: space-between; 
   position: fixed;
   z-index: 100;
- }
- .contato{
+}
+
+.contato{
   display: flex;
   width: 600px;
   margin: 0 auto;
   background-color: #000016;
   padding: 0 20px 20px 20px;
- }
- .mapaContato{
+}
+
+.mapaContato{
   display: flex;
- }
- .mapa{
+}
+
+.mapa{
   border-style: none;
   flex-grow: 1;
- }
->>>>>>> c099cd85402e4fdd870b3667d79242340ece4277
+}
