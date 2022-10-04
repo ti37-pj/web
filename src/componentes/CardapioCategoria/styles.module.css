@@ -1,9 +1,11 @@
 .cardapioCategoria {
     justify-content: center;
+    margin-top: 128px;    
 }
 
 .cardapioCategoria h3 {
     justify-content: center;
+    text-align: center;
 }
 
 .cardapioCategoria ul {
