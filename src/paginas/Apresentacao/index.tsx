@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import CardapioCategoria from "../../componentes/CardapioCategoria";
 import Menu from "../../componentes/Menu";
-import './styles.module.css';
+import styles from './styles.module.css';
 import Categoria from "../../modelos/Categoria";
 import Produto from "../../modelos/Produto";
 import Rodape from "../../componentes/Rodape";
@@ -39,13 +39,9 @@ function PaginaApresentacao() {
 
 return (
   <>
-    <header className="apresentacao">
-      <div>
+    <header className={styles.header}>
         <h1>Lelexo Bar</h1>
-      </div>
-      <div>
         <Menu />
-      </div>
     </header>
 
     <main id="inicio">

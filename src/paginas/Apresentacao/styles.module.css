@@ -7,8 +7,14 @@
   
 .header {
   padding-left: 20px;
+  padding-right: 20px;
   align-items: center;
-  margin-inline: 16px;
+  background-color: #000;
+  position: fixed;
+  z-index: 900;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 #button {
