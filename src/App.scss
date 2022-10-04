@@ -50,3 +50,17 @@ body {
   border-style: none;
   flex-grow: 1;
 }
+
+$carousel_height: 400px;
+
+.carousel-inner {
+  max-height: $carousel_height;
+
+  .carousel-item {
+    img {
+      width: 100%;
+      height: $carousel_height;
+      object-fit: cover;
+    }
+  }
+}
