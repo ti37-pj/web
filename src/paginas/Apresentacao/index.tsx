@@ -23,14 +23,15 @@ function PaginaApresentacao() {
         })
 		.catch(res => console.log(res))
     }
+
     const buscaCategorias = () => {
       api.get<Categoria[]>('/categorias/busca_todos')
       .then(res => {
           console.log(res.data)
           setCategorias(res.data)
       })
-  .catch(res => console.log(res))
-  }
+      .catch(res => console.log(res))
+    }
 
     useEffect(() => {
         buscaProdutos()
