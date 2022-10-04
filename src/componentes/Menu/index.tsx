@@ -1,16 +1,21 @@
+import { useState } from 'react';
 import styles from './styles.module.css'
 
 const Menu = () => {
-	return (
-		<div >
-			<nav className={styles.menu}>
-				<a href="#inicio">Início</a> 
-				<a href="#cardapio">Cardápio</a> 
-				<a href="#contato">Contato e Localização</a>
-				<a href='#baixaaplicativo'>Baixar app </a>
-	    	</nav>
-		</div>
+	const [hash, setHash] = useState('');
 
+	// Chamado sempre que o endereço hash do navegador mudar
+	window.addEventListener('hashchange', function() {
+		setHash(window.location.hash);
+	})
+
+	return (
+		<nav className={styles.menu}>
+			<a href="#inicio" className={hash === '#inicio' || hash === '' ? styles.active : ''}>Início</a> 
+			<a href="#cardapio" className={hash === '#cardapio' ? styles.active : ''}>Cardápio</a> 
+			<a href="#contato" className={hash === '#contato' ? styles.active : ''}>Contato e Localização</a>
+			<a href='#baixaaplicativo' className={hash === '#baixaaplicativo' ? styles.active : ''}>Baixar app </a>
+		</nav>
 	)
 }
 

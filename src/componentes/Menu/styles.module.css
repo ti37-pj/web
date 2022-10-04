@@ -1,6 +1,17 @@
+.menu {
+    display: flex;
+    column-gap: 56px;
+    padding: 0px 20px;
+}
+
 .menu a {
-    padding-left: 40px;
     align-items: center;
-    margin-inline: 16px;
     justify-content: center;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a.active {
+    border-bottom: 1px solid red;
 }
