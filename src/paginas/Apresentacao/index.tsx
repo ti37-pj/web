@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import CardapioCategoria from "../../componentes/CardapioCategoria";
 import Menu from "../../componentes/Menu";
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 import Categoria from "../../modelos/Categoria";
 import Produto from "../../modelos/Produto";
 import Rodape from "../../componentes/Rodape";

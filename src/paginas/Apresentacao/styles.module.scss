@@ -4,7 +4,9 @@
   line-height: 28px;
   color: #777777;
 }
-  
+
+$header_height: 128px;
+
 .header {
   padding-left: 20px;
   padding-right: 20px;
@@ -15,9 +17,14 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  height: $header_height;
 }
 
 #button {
   --mdc-theme-primary: #FEDBD0;
   --mdc-theme-on-primary: #442C2E;
+}
+
+main {
+  padding-top: $header_height;
 }
