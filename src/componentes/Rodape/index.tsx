@@ -3,7 +3,7 @@
 const Rodape = () => {
 
 	return (
-        <footer>
+        <footer id="contato">
 
             <h2>Contato e localização</h2>
 
