@@ -11,7 +11,7 @@ $header_height: 128px;
   padding-left: 20px;
   padding-right: 20px;
   align-items: center;
-  background-color: #000;
+  background-color: #242425;
   position: fixed;
   z-index: 900;
   width: 100vw;
@@ -27,4 +27,8 @@ $header_height: 128px;
 
 main {
   padding-top: $header_height;
+}
+
+header h1 {
+  color: #e0db83;
 }

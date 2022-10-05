@@ -7,11 +7,11 @@
 .menu a {
     align-items: center;
     justify-content: center;
-    color: red;
+    color: #e0db83;
     text-decoration: none;
     text-transform: uppercase;
 }
 
 .menu a.active {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #e0db83;
 }

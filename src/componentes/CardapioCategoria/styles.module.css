@@ -1,9 +1,14 @@
 .cardapioCategoria {
     justify-content: center;
-    margin-top: 128px;    
+    margin-top: 30px;    
 }
 
 .cardapioCategoria h3 {
+    font-size: 1.8em;
+    background: #0000003f;
+    padding: 10px 50px;
+    width: fit-content;
+    margin: auto;
     justify-content: center;
     text-align: center;
 }

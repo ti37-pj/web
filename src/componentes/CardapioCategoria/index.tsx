@@ -12,13 +12,13 @@ type Props = {
 };
 
 const CardapioCategoria: FC<Props> = (props) => {
-    
+
     return (
         <div className={styles.cardapioCategoria}>
             <h3>{props.categoria.nome}</h3>
             <ul>
                 {props.produtos.map(function (produto, index) {
-                    if ( index <= 4 ) {
+                    if ( index <= 3 ) {
                         return <CardapioItem produto={produto}/>
                     } 
                 })}            

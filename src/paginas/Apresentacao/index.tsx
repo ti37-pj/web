@@ -15,7 +15,7 @@ function PaginaApresentacao() {
 
 
     const buscaProdutos = () => {
-        api.get<Produto[]>('/produtos/busca_todos')
+        api.get<Produto[]>('/produtos/busca_todos_aleatorio')
 		    .then(res => {
             console.log(res.data)
             setProdutos(res.data)
@@ -46,7 +46,7 @@ return (
 
     <main id="inicio">
 
-    <Carousel>
+    <Carousel style={{marginBottom: 20}} >
       <Carousel.Item>
         <img
         className="d-block w-100"
@@ -84,7 +84,6 @@ return (
     <section style={estilo.containerCardapio} >
 
     <div id="cardapio" >
-      <h2>Cardápio</h2>
       {categorias.map(categoria =>
       <CardapioCategoria categoria={categoria} produtos={produtosDaCategoria(categoria)} />
       )}
@@ -97,15 +96,14 @@ return (
 }
 
 const estilo = {
-  tituloCardapio: {
-    fontSize: "2em",
-    textAlign: "center"
-  },
   containerCardapio: {
-    backgroundColor: "#36393FF9",
+    backgroundColor: "#36393FEE",
     maxWidth: 1800,
     width: "100%",
-    margin: "auto"
+    margin: "auto",
+    borderRadius: 30,
+    padding: 20,
+    boxShadow: "3px 4px 5px #000",
   }
 }
 
